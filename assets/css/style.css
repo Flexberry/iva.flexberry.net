@@ -23,11 +23,28 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.main {
+  background-color: #F7F7F7;
+  padding: 8rem 0;
+  position: relative;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url(../img/main-bg.svg);
+  background-position: 30% 25%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 .gradient-box {
   background: linear-gradient(90deg, #25D838, #710FD8);
   color: #ffffff;
   padding: 80px 0;
-
 }
 
 .color-black {
@@ -75,10 +92,17 @@ body {
 .btn-gradient {
   background-color: #ffffff;
   color: #710FD8;
+  box-shadow: 0px 0px 4px 0px #ab7ade;
 }
 
 .btn-gradient:hover {
   background-color: #f3f3f3;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .main::before {
+    background-position: 40% 25%;
+  }
 }
 
 
@@ -98,6 +122,12 @@ body {
 
   .gradient-box {
     padding: 40px 0;
+  }
+  .main {
+    padding: 4rem 0;
+  }
+  .main::before {
+    background-position: 30% 47%;
   }
 }
 
