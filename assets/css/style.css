@@ -191,3 +191,66 @@ body.modal-open {
   border-radius: 12px; /* если хочешь скруглённые углы */
   display: block;
 }
+
+.stage-box {
+  background: linear-gradient(90deg, #710FD8, #25D838);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.feature-title {
+  position: relative;
+}
+
+.feature-title::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: #5d10af;
+}
+
+.team-role {
+  color: #710FD8;
+  font-weight: 500;
+}
+
+.team-skills {
+  list-style: none;
+}
+
+.team-skills li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-skills li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: #25D838;
+  font-weight: 600;
+}
+
+.why-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.why-number {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #710FD8;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-project {
+  border-left: 2px solid #25D838;
+  border-right: 2px solid #25D838;
+  border-radius: 16px;
+}
